@@ -303,7 +303,7 @@ function showMark() {
     next.innerHTML = "Wanna play again?";
     next.style.display = "block";
     next.style.cursor = "pointer";
-    next.style.width = "25%";
+    // next.style.width = "50%";
 }
 
 
