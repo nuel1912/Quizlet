@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/BQ.jpg);
+    background-position: center;
+    background-size: cover;
+    /* padding: 60px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    background: rgba(25,25,25,0.8);
+    width: 70%;
+    margin: auto;
+    padding: 32px;
+    border-bottom: 1px solid #fff;
+}
+
+.app h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 20px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    background: rgba(27, 8, 1, 0.5);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    outline: 0;
+    padding: 12px;
+    margin: 12px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s ease-in-out all;
+}
+
+.btn:hover:not([disabled]) {
+    background: rgb(29, 8, 1);
+    color: #fff;
+}
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next {
+    background: rgba(27, 8, 1, 0.5);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 20%;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    margin: 12px auto 0;
+    display: none;
+    transition: 0.5s ease-in-out all;
+}
+#next:hover {
+    background: rgba(27, 8, 1, 0.8);
+}
+
+.right {
+    background: #1ab31a;
+    color: #fff;
+}
+.wrong {
+    background: #e92020;
+    color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+    .app {
+        width: 95%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .app h1 {
+        font-size: 28px;
+    }
+    .quiz h2 {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    #next {
+        width: 30%;
+    }
+}
